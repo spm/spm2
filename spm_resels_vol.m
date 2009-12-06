@@ -21,4 +21,4 @@ function varargout = spm_resels_vol(varargin)
 % @(#)spm_resels_vol.m	2.2 John Ashburner 99/04/19
 
 %-This is merely the help file for the compiled routine
-error('spm_resels_vol.c not compiled - see spm_MAKE.sh')
+error('spm_resels_vol.c not compiled - see Makefile')

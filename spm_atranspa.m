@@ -13,4 +13,4 @@ function varargout = spm_atranspa(varargin)
 % @(#)spm_atranspa.m	2.1 John Ashburner MRCCU/FIL 99/04/19
 
 %-This is merely the help file for the compiled routine
-error('spm_atranspa.c not compiled - see spm_MAKE.sh')
+error('spm_atranspa.c not compiled - see Makefile')

@@ -15,4 +15,4 @@ function varargout = spm_win32utils(varargin)
 % @(#)spm_win32utils.m	2.1 Matthew Brett 99/04/19
 
 %-This is merely the help file for the compiled routine
-error('spm_win32utils.c not compiled - see spm_MAKE.sh')
+error('spm_win32utils.c not compiled - see Makefile')

@@ -68,4 +68,4 @@ function varargout = spm_brainwarp(varargin)
 % @(#)spm_brainwarp.m	2.2 (c) John Ashburner MRCCU/FIL 99/04/19
 
 %-This is merely the help file for the compiled routine
-error('spm_brainwarp.c not compiled - see spm_MAKE.sh')
+error('spm_brainwarp.c not compiled - see Makefile')

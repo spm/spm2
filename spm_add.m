@@ -20,4 +20,4 @@ function varargout = spm_add(varargin)
 % @(#)spm_add.m	2.7 John Ashburner (from JB's original spm_mean.c) 99/04/19
 
 %-This is merely the help file for the compiled routine
-error('spm_add.c not compiled - see spm_MAKE.sh')
+error('spm_add.c not compiled - see Makefile')
