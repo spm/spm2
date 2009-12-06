@@ -3,6 +3,7 @@ static char sccsid[]="@(#)spm_dilate.c	1.2 (c) Jesper Andersson 03/05/12";
 #endif
 
 #include "mex.h"
+#include <string.h>
 #include <math.h>
 
 #ifndef max
