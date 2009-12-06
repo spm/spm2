@@ -152,6 +152,7 @@ global SPM_PLATFORM
 %-Platform definitions
 %-----------------------------------------------------------------------
 PDefs = {	'PCWIN',	'win',	0;...
+		'PCWIN64',	'win',	0;...
 		'MAC',		'unx',	1;...
 		'SUN4',		'unx',	1;...
 		'SOL2',		'unx',	1;...
@@ -224,7 +225,7 @@ case {'SUN4','SOL2','HP700','SGI','SGI64','IBM_RS','ALPHA','LNX86','GLNX86','GLN
 	SPM_PLATFORM.font.times     = 'Times';
 	SPM_PLATFORM.font.courier   = 'Courier';
 	SPM_PLATFORM.font.symbol    = 'Symbol';
-case {'PCWIN'}
+case {'PCWIN','PCWIN64'}
 	SPM_PLATFORM.font.helvetica = 'Arial Narrow';
 	SPM_PLATFORM.font.times     = 'Times New Roman';
 	SPM_PLATFORM.font.courier   = 'Courier New';
