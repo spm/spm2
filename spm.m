@@ -106,7 +106,7 @@ function varargout=spm(varargin)
 %
 % FORMAT [Modality,ModNum]=spm('CheckModality',Modality)
 % Checks the specified modality against those supported, returns
-% upper(Modality) and the Modality number, its position in the list of
+% upper(Modality) and the Modality number, it's position in the list of
 % supported Modalities.
 %
 % FORMAT WS=spm('WinScale')

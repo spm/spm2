@@ -3,11 +3,11 @@ function [u] = spm_u(a,df,STAT)
 % FORMAT [u] = spm_u(a,df,STAT)
 % a     - critical probability - {alpha}
 % df    - [df{interest} df{error}]
-% STAT  - Statistical field
-%               'Z' - Gaussian field
-%               'T' - T - field
-%               'X' - Chi squared field
-%               'F' - F - field
+% STAT  - Statisical feild
+%               'Z' - Gaussian feild
+%               'T' - T - feild
+%               'X' - Chi squared feild
+%               'F' - F - feild
 %
 % u     - critical height {uncorrected}
 %___________________________________________________________________________

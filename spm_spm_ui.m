@@ -221,7 +221,7 @@ function varargout = spm_spm_ui(varargin)
 % global values is the value specified. For qualitative data, this puts
 % the data into an intuitively accessible scale without altering the
 % statistics. When proportional scaling global normalisation is used
-% (see below), each image is seperately scaled such that its global
+% (see below), each image is seperately scaled such that it's global
 % value is that specified (in which case the grand mean is also
 % implicitly scaled to that value). When using AnCova or no global
 % normalisation, with data from different subjects or sessions, an
@@ -366,7 +366,7 @@ function varargout = spm_spm_ui(varargin)
 % This allows you to model unequal variances among its levels.
 % The ensuing covariance components will be estimated using ReML in spm_spm
 % (assuming the same for all voxels) and used to adjust the statistics and
-% degrees of freedom during inference.  By default spm_spm will use weighted
+% degrees of freedom during inference.  By default spm_spm will use wieghted
 % least squares to produce Gauss-Markov or Maximum likelihood estimators
 % using the non-sphericity strcuture specified at this stage. The components
 % will be found in xX.xVi and enter the estimation procedure exactly as the 

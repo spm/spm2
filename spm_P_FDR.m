@@ -4,11 +4,11 @@ function [P] = spm_P_FDR(Z,df,STAT,n,Ps)
 %
 % Z     - height (minimum of n statistics)
 % df    - [df{interest} df{error}]
-% STAT  - Statistical field
-%		'Z' - Gaussian field
-%		'T' - T - field
-%		'X' - Chi squared field
-%		'F' - F - field
+% STAT  - Statisical field
+%		'Z' - Gaussian feild
+%		'T' - T - feild
+%		'X' - Chi squared feild
+%		'F' - F - feild
 % n     - number of component SPMs in conjunction
 % Vs    - Vector of sorted [ascending) p-values in search volume
 %
@@ -29,19 +29,19 @@ function [P] = spm_P_FDR(Z,df,STAT,n,Ps)
 % than threshold.  In this terminology, the FDR is the proportion of
 % rejected tests where the null hypothesis is actually true.
 %
-% A FDR procedure produces a threshold that controls the expected FDR
+% A FDR proceedure produces a threshold that controls the expected FDR
 % at or below q.  The FDR adjusted p-value for a voxel is the smallest q
 % such that the voxel would be suprathreshold.
 %
-% In comparison, a traditional multiple comparisons procedure
+% In comparison, a traditional multiple comparisons proceedure
 % (e.g. Bonferroni or random field methods) controls Familywise Error
 % rate (FWER) at or below alpha.  FWER is the *chance* of one or more
 % false positives anywhere (whereas FDR is a *proportion* of false
 % positives).  A FWER adjusted p-value for a voxel is the smallest alpha
 % such that the voxel would be suprathreshold. 
 %
-% If there is truly no signal in the image anywhere, then a FDR
-% procedure controls FWER, just as Bonferroni and random field methods
+% If there is truely no signal in the image anywhere, then a FDR
+% proceedure controls FWER, just as Bonferroni and random field methods
 % do. (Precisely, controlling E(FDR) yields weak control of FWE).  If
 % there is some signal in the image, a FDR method should be more powerful
 % than a traditional method.

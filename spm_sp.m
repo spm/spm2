@@ -162,7 +162,7 @@ function varargout = spm_sp(varargin)
 % Test whether a variable is a space structure with the basic fields set
 % x - candidate variable
 % b - true is x is a structure with fieldnames corresponding to
-%     spm_sp('Create'), which has its basic fields filled in.
+%     spm_sp('Create'), which has it's basic fields filled in.
 % e - string describing why x fails the issetspc test (if it does)
 % This is simply a gateway function combining spm_sp('isspc',x) with
 % the internal subfunction sf_isset, which checks that the basic fields

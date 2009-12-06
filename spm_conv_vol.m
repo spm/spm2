@@ -34,4 +34,4 @@ function varargout = spm_conv_vol(varargin)
 % @(#)spm_conv_vol.m	2.1 John Ashburner, Tom Nichols 99/04/19
 
 %-This is merely the help file for the compiled routine
-error('spm_conv_vol.c not compiled - see Makefile')
+error('spm_conv_vol.c not compiled - see spm_MAKE.sh')

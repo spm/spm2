@@ -34,7 +34,7 @@ function spm_adjmean_ui
 % The model, filenames, global values and options are saved to a MatLab
 % *.mat file named SPMadj.mat in the current working directory.
 %
-% Implicit masking is carried out: Zero voxels are implicitly assumed
+% Implicit masking is carried out: Zero voxels are implicitly assummed
 % to be masked out. Thus, the adjusted mean is calculated at voxels
 % which are non-zero in *all* the input images pertaining to the
 % adjusted mean (usually those from the appropriate subject). (This is
@@ -47,7 +47,7 @@ function spm_adjmean_ui
 %
 % If computing adjusted means for subsequent (2nd level) modelling, as
 % with a random effects analysis, then it is important to use a
-% separable model, such that the adjustment for one subject is
+% seperable model, such that the adjustment for one subject is
 % independent of other subjects entered into the model. Thus,
 % proportional scaling or subject-specific AnCova adjustment must be
 % used. Further, multiple runs *must* use the same GM value, and should
@@ -76,15 +76,15 @@ function spm_adjmean_ui
 % As always, look at the resulting mean images to make sure they look OK!
 %
 %
-% AdjMean "recipes"...
+% AdjMean "recipies"...
 % ----------------------------------------------------------------------
 % Rather than offer a bewildering array of options, various
-% pre-configured recipes are offered for common scenarios:
+% pre-configured recipies are offered for common scenarios:
 %
 % * Basic means: +/- grand mean scaling; +/- global normalisation
 %
 %  1) Straight mean
-%       - as the name suggests! Prompts for files and writes their mean.
+%       - as the neame suggests! Prompts for files and writes their mean.
 %  2) PropSca & Average
 %       - Average of images adjusted for global differences by proportional
 %         scaling: Scales all images to have global mean of GM, and then
@@ -102,7 +102,7 @@ function spm_adjmean_ui
 %         scaling within block and then writing out the block means, it's
 %         also tagged "scaled means".
 %
-% * The "condition" recipes: Adjusted condition means, computed within subj.
+% * The "condition" recipies: Adjusted condition means, computed within subj.
 %
 %  5) SingleSubj: Condition means (PropSca)
 %       - Proportional scaling global normalisation of image global means

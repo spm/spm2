@@ -116,7 +116,7 @@ function varargout = spm_get(varargin)
 % the CurrentDir and Filter editable widgets. Return changes to the
 % specifiec directory (CurrentDir widget) or applys the current filter
 % (Fitler widget). ^U deletes the whole entry, ^W deletes the last
-% pathname component, ^I resets the string to its previous value.
+% pathname component, ^I resets the string to it's previous value.
 %
 % - General Accelerators -
 %        Space / ^D   - Done
@@ -1020,7 +1020,7 @@ if ~NoComp & size(Items,1)>32
 		'ButtonDownFcn','spm_get(''dir'',[],[],1)',...
 		'HandleVisibility','off');
 else
-	%-Use a standard view, each item with its own representation
+	%-Use a standard view, each item with it's own representation
 	IName = Items; ItemPos = [1:size(Items,1)]';
 end
 

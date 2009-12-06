@@ -3,11 +3,11 @@ function [u] = spm_uc_Bonf(a,df,STAT,S,n)
 % FORMAT [u] = spm_uc_Bonf(a,df,STAT,S,n)
 % a     - critical probability - {alpha}
 % df    - [df{interest} df{residuals}]
-% STAT  - Statistical field
-%		'Z' - Gaussian field
-%		'T' - T - field
-%		'X' - Chi squared field
-%		'F' - F - field
+% STAT  - Statisical feild
+%		'Z' - Gaussian feild
+%		'T' - T - feild
+%		'X' - Chi squared feild
+%		'F' - F - feild
 % S     - Voxel count
 % n     - number of conjoint SPMs
 %

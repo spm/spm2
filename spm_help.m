@@ -39,7 +39,7 @@ function varargout=spm_help(varargin)
 %  ---  Routines and manual pages (generically referred to as help
 %       "topics") referenced by the currently displayed help file are
 %       listed in the "Referenced Topics..." pull-down menu on the help
-%       interface. Selecting a routine there displays its help
+%       interface. Selecting a routine there displays it's help
 %       information.
 %
 %  ---  Alternatively, a specific function name can be entered into
@@ -179,7 +179,7 @@ function varargout=spm_help(varargin)
 % FORMAT F = spm_help('!CreateHelpWin')
 % F        - Handle of figure created
 % Creates central Help window 'Tag'ged 'Help'. If one already exists
-% then its handle is returned.
+% then it's handle is returned.
 %
 % FORMAT spm_help('!CreateBar',F)
 % F        - Handle (or 'Tag') of window to use. Defaults to 'Help'.

@@ -233,8 +233,8 @@ function VO = init_vo(sn,vox,bb)
 if nargin>=2,
 	[bb0,vox0] = bbvox_from_V(sn.VG);
 
-	if any(~isfinite(bb)),  bb  = bb0;  end;
-	if any(~isfinite(vox)), vox = vox0; end;
+	if any(~finite(bb)),  bb  = bb0;  end;
+	if any(~finite(vox)), vox = vox0; end;
 
 	bb      = sort(bb);
 	vox     = abs(vox);
@@ -412,15 +412,15 @@ function spm_write_defs(sn, vox,bb)
 %_______________________________________________________________________
 
 [bb0,vox0] = bbvox_from_V(sn.VG);
-if any(~isfinite(vox)), vox = vox0; end;
-if any(~isfinite(bb)),  bb  = bb0;  end;
+if any(~finite(vox)), vox = vox0; end;
+if any(~finite(bb)),  bb  = bb0;  end;
 bb  = sort(bb);
 vox = abs(vox);
 
 if nargin>=3,
 
-	if any(~isfinite(vox)), vox = vox0; end;
-	if any(~isfinite(bb)),  bb  = bb0;  end;
+	if any(~finite(vox)), vox = vox0; end;
+	if any(~finite(bb)),  bb  = bb0;  end;
 	bb  = sort(bb);
 	vox = abs(vox);
 

@@ -29,7 +29,7 @@ function [z,t1,z1] = spm_t2z(t,df,Tol)
 % by that of the maxima of a gaussian statistic image (these
 % distributions usually being approximated using the theory of
 % continuous random fields)  (KJW - private communication). For fMRI
-% with its higher resolution, it is likely that even greater degrees
+% with it's higher resolution, it is likely that even greater degrees
 % of freedom are required for such an approximation.
 %
 % *No* one-one approximation is made in this code for high df: This is

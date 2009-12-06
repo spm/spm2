@@ -1,16 +1,16 @@
 function [P,p,Em,En,EN] = spm_P(c,k,Z,df,STAT,R,n,S)
-% Returns the [un]corrected P value using unified EC theory
+% Returns the [un]corrected P value using unifed EC theory
 % FORMAT [P p Em En EN] = spm_P(c,k,Z,df,STAT,R,n,S)
 %
 % c     - cluster number 
 % k     - extent {RESELS}
 % Z     - height {minimum over n values}
 % df    - [df{interest} df{error}]
-% STAT  - Statistical field
-%		'Z' - Gaussian field
-%		'T' - T - field
-%		'X' - Chi squared field
-%		'F' - F - field
+% STAT  - Statisical feild
+%		'Z' - Gaussian feild
+%		'T' - T - feild
+%		'X' - Chi squared feild
+%		'F' - F - feild
 %		'P' - Posterior probability
 % R     - RESEL Count {defining search volume}
 % n     - number of component SPMs in conjunction

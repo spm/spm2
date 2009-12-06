@@ -51,7 +51,7 @@ else
 	%-------------------------------------------------------------------
 	if isstruct(K)
 
-		% ensure requisite fields are present
+		% ensure requisite feilds are present
 		%-----------------------------------------------------------
 		if ~isfield(K(1),'X0')
 			K = spm_filter(K);

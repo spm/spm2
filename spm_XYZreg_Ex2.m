@@ -5,7 +5,7 @@ function varargout=spm_XYZreg_Ex2(varargin)
 %
 % Help goes here...
 %
-% Object must be identifiable via a unique HandleGraphics object.
+% Object must be indentifiable via a unique HandleGraphics object.
 % In this code, this handle is called hMe.
 %
 % This HandleGraphics objects 'UserData' *must* be a structure.
@@ -28,7 +28,7 @@ function varargout=spm_XYZreg_Ex2(varargin)
 %
 % Hey, if your function has multiple places where you can change the XYZ,
 % you could use an ``internal'' registry locally, with the external registry
-% as one of its entries! (I think?)
+% as one of it's entries! (I think?)
 %
 %_______________________________________________________________________
 % @(#)spm_XYZreg_Ex2.m	2.1 Andrew Holmes 98/03/23

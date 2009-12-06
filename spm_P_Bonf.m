@@ -4,11 +4,11 @@ function P = spm_P_Bonf(Z,df,STAT,S,n)
 %
 % Z     - height {minium over n values}
 % df    - [df{interest} df{error}]
-% STAT  - Statistical field
-%		'Z' - Gaussian field
-%		'T' - T - field
-%		'X' - Chi squared field
-%		'F' - F - field
+% STAT  - Statisical feild
+%		'Z' - Gaussian feild
+%		'T' - T - feild
+%		'X' - Chi squared feild
+%		'F' - F - feild
 % n     - number of conjoint SPMs
 % S     - Voxel count
 %
@@ -19,7 +19,7 @@ function P = spm_P_Bonf(Z,df,STAT,S,n)
 % spm_P_Bonf returns the p-value of Z corrected by the Bonferroni
 % inequality. 
 %
-% If n > 1 a conjunction probability over the n values of the statistic
+% If n > 1 a conjunction probility over the n values of the statistic
 % is returned
 %
 %___________________________________________________________________________

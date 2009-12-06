@@ -49,7 +49,7 @@ VO.pinfo  = [];
 for i=1:V.dim(3)+r{3}.s,
 	if i<=V.dim(3),
 		img      = spm_slice_vol(V,spm_matrix([0 0 i]),V.dim(1:2),0);
-		msk      = find(~isfinite(img));
+		msk      = find(~finite(img));
 		img(msk) = 0;
 		buff(:,:,rem(i-1,r{3}.s*2+1)+1) = ...
 			conv2(conv2(img,r{1}.k,'same'),r{2}.k','same');

@@ -23,7 +23,6 @@ static char sccsid[] = "@(#)spm_bwlabel.c	2.1 Jesper Andersson 03/12/16";
 #include "mex.h"
 #include <math.h>
 #include <limits.h>
-#include <string.h>
 
 /* Silly little macros. */
 

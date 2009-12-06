@@ -977,7 +977,7 @@ h = findobj(H,'flat','Tag','PermRes');		%-Look for 'PermRes' object
 
 if ~isempty(h)
 	%-Found 'PermRes' object
-	% This has handles of permanent results objects in its UserData
+	% This has handles of permanent results objects in it's UserData
 	tmp  = get(h,'UserData');
 	HR   = tmp.H;
 	HRv  = tmp.Hv;

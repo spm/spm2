@@ -198,10 +198,10 @@ function varargout=spm_XYZreg(varargin)
 % function is the registry's handling function). The registry itself
 % consists of object-handle/handling-function pairs.
 %
-% If an object and its handling function are entered in the registry,
+% If an object and it's handling function are entered in the registry,
 % then the object is said to be "forward registered", because the
 % registry will now forward all location updates to that object, via
-% its handling function. The assummed syntax is:
+% it's handling function. The assummed syntax is:
 % feval(Fcn,'SetCoords',xyz,h,hReg), where Fcn is the handling function
 % for the GUI control identified by handle h, xyz are the new
 % co-ordinates, and hReg is the handle of the registry.
@@ -223,10 +223,10 @@ function varargout=spm_XYZreg(varargin)
 %
 % A framework is provided for "back" registration. Really all that is
 % required is that the GUI controls know of the registry object (via
-% its handle hReg), and call the registry's 'SetCoords' facility when
+% it's handle hReg), and call the registry's 'SetCoords' facility when
 % necessary. This can be done in many ways, but a simple structure is
 % provided, mirroring that of the registry's operation. This framework
-% assumes that the GUI controls identification object's 'UserData' is
+% assummes that the GUI controls identification object's 'UserData' is
 % a structure with a field named 'hReg', which stores the handle of the
 % registry (if back registered), or is empty (if not back registered,
 % i.e. standalone). spm_XYZreg provides utility functions for
@@ -235,7 +235,7 @@ function varargout=spm_XYZreg(varargin)
 % involves adding the handle/function pair to the registry, and setting
 % the registry handle in the GUI control object's 'UserData' 'hReg'
 % field. It's up to the handling function to read the registry handle
-% from its objects 'UserData' and act accordingly. A simple example of
+% from it's objects 'UserData' and act accordingly. A simple example of
 % such a function is provided in spm_XYZreg_Ex2.m, illustrated below.
 %
 % SubFunctions are provided for getting and setting the current

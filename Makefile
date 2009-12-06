@@ -52,8 +52,6 @@ OSF1:
 	make all SUF=mexaxp
 MAC:
 	make all SUF=mexmac RANLIB="ranlib spm_vol_utils.mexmac.a"
-MACI:
-	make all SUF=mexmaci RANLIB="ranlib spm_vol_utils.mexmaci.a"
 
 Linux.A64:
 # The '-fPIC' option is nexessary to allow the linking proces to complete.
@@ -95,8 +93,6 @@ clean.OSF1:
 	make clean SUF=mexaxp
 clean.MAC:
 	make clean SUF=mexmac
-clean.MACI:
-	make clean SUF=mexmaci
 clean.windows:
 	make clean SUF=dll
 
@@ -120,8 +116,8 @@ SPMMEX =\
 	spm_add.$(SUF) spm_conv_vol.$(SUF) spm_render_vol.$(SUF)\
 	spm_global.$(SUF) spm_resels_vol.$(SUF)\
 	spm_atranspa.$(SUF) spm_list_files.$(SUF) spm_unlink.$(SUF)\
-	spm_krutil.$(SUF) spm_project.$(SUF) spm_hist2.$(SUF) spm_get_lm.$(SUF)\
-	spm_bwlabel.$(SUF) spm_bsplinc.$(SUF) spm_bsplins.$(SUF)\
+	spm_krutil.$(SUF) spm_project.$(SUF) spm_hist2.$(SUF) spm_max.$(SUF)\
+	spm_clusters.$(SUF) spm_bsplinc.$(SUF) spm_bsplins.$(SUF)\
 	spm_bias_mex.$(SUF) spm_dilate.$(SUF) $(ADDED_MEX)
 
 ###############################################################################
@@ -287,9 +283,9 @@ spm_atranspa.$(SUF): spm_atranspa.c spm_sys_deps.h
 
 spm_unlink.$(SUF): spm_unlink.c spm_sys_deps.h
 
-spm_bwlabel.$(SUF): spm_bwlabel.c
+spm_max.$(SUF): spm_max.c spm_sys_deps.h
 
-spm_get_lm.$(SUF): spm_get_lm.c
+spm_clusters.$(SUF): spm_clusters.c spm_sys_deps.h
 
 spm_hist2.$(SUF):      spm_hist2.c spm_sys_deps.h
 
@@ -416,13 +412,6 @@ verb.mexmac:
 	@ echo "_____________________________________________________________"
 	@ echo ""
 	@ echo "Unix compile for MacOS X"
-	@ echo "_____________________________________________________________"
-	@ echo ""
-
-verb.mexmaci:
-	@ echo "_____________________________________________________________"
-	@ echo ""
-	@ echo "Unix compile for MacOS X Intel"
 	@ echo "_____________________________________________________________"
 	@ echo ""
 

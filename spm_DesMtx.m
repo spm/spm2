@@ -201,7 +201,7 @@ function [X,Pnames,Index,idx,jdx,kdx]=spm_DesMtx(varargin);
 % utility for setting patterned indicator vectors, inspired by
 % MINITAB's "SET" command.
 %
-% The vector v has its elements replicated m times, and the resulting
+% The vector v has it's elements replicated m times, and the resulting
 % vector is itself repeated n times, giving a resultant vector i of
 % length n*m*length(v)
 %

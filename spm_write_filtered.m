@@ -11,7 +11,7 @@ function Vo = spm_write_filtered(Z,XYZ,DIM,M,descrip)
 %
 %-----------------------------------------------------------------------
 %
-% spm_write_filtered takes a pointlist image (parallel matrices of
+% spm_write_filtered takes a pointlist image (parallel matrixes of
 % co-ordinates and voxel intensities), and writes it out into an image
 % file.
 %

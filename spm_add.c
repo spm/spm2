@@ -20,7 +20,7 @@ static char sccsid[]="@(#)spm_add.c	2.10 John Ashburner & Jean-Baptiste Poline 0
 % The image is written as signed short (16 bit) unless the `f' flag 
 % is specified. 
 %
-% A mean can be effected by scaling the output image via its
+% A mean can be effected by scaling the output image via it's
 % scalefactor (see spm_mean for an example). A weighted sum can be
 % effected by weighting the image scalefactors appropriately.
 %

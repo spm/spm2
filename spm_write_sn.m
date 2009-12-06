@@ -88,8 +88,8 @@ else,
 	end;
 end;
 
-if ~all(isfinite(flags.vox(:))), flags.vox = def_flags.vox; end;
-if ~all(isfinite(flags.bb(:))),  flags.bb  = def_flags.bb;  end;
+if ~all(finite(flags.vox(:))), flags.vox = def_flags.vox; end;
+if ~all(finite(flags.bb(:))),  flags.bb  = def_flags.bb;  end;
 
 [x,y,z,mat] = get_xyzmat(prm,flags.bb,flags.vox);
 

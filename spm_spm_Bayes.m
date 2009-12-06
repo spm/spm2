@@ -20,7 +20,7 @@ function [SPM] = spm_spm_Bayes(SPM)
 % things much more computationally efficient and avoids inefficient
 % voxel-specific multiple hyperparameter estimates.
 %
-% spm_spm_Bayes adds the following fields to SPM:
+% spm_spm_Bayes adds the following feilds to SPM:
 %
 %                           ----------------
 %

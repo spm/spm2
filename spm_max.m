@@ -33,7 +33,7 @@ index = sub2ind(dim,L(1,:)',L(2,:)',L(3,:)');
 vol(index) = 1;
 
 %
-% Label each cluster in 3D volume with its 
+% Label each cluster in 3D volume with it's 
 % own little label using an 18 connectivity
 % criterion (without crashing ;-)).
 %

@@ -3,11 +3,11 @@ function [u] = spm_uc_RF(a,df,STAT,R,n)
 % FORMAT [u] = spm_uc_RF(a,df,STAT,R,n)
 % a     - critical probability - {alpha}
 % df    - [df{interest} df{residuals}]
-% STAT  - Statistical field
-%		'Z' - Gaussian field
-%		'T' - T - field
-%		'X' - Chi squared field
-%		'F' - F - field
+% STAT  - Statisical feild
+%		'Z' - Gaussian feild
+%		'T' - T - feild
+%		'X' - Chi squared feild
+%		'F' - F - feild
 % R     - RESEL Count {defining search volume}
 % n     - number of conjoint SPMs
 %

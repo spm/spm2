@@ -46,7 +46,7 @@ function spm_adjmean_fmri_ui
 %
 % Once the experimental design has been specified, the user is given
 % various options: The box-cars can be convolved with an approximate
-% haemodynamic response function; High-pass filter components can be
+% haemodynamic reponse function; High-pass filter components can be
 % added to the confounds (at a user-specified cut-off which defaults to
 % twice the maximum period of the experiment); Global normalisation can
 % be omitted, or implemented by proportional scaling or AnCova; and the

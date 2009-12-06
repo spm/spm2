@@ -131,7 +131,7 @@ static void mrqcof(double T[], double alpha[], double beta[], double pss[],
 
 	for(s0[2]=1; s0[2]<dim1[2]; s0[2]+=samp[2]) /* For each plane of the template images */
 	{
-		/* build up the deformation field (and derivatives) from its separable form */
+		/* build up the deformation field (and derivatives) from it's seperable form */
 		for(i1=0, ptr1=T; i1<3; i1++, ptr1 += nz*ny*nx)
 			for(x1=0; x1<nx*ny; x1++)
 			{
@@ -162,7 +162,7 @@ static void mrqcof(double T[], double alpha[], double beta[], double pss[],
 
 		for(s0[1]=1; s0[1]<dim1[1]; s0[1]+=samp[1]) /* For each row of the template images plane */
 		{
-			/* build up the deformation field (and derivatives) from its separable form */
+			/* build up the deformation field (and derivatives) from it's seperable form */
 			for(i1=0, ptr1=Tz; i1<3; i1++, ptr1+=ny*nx)
 			{
 				for(x1=0; x1<nx; x1++)

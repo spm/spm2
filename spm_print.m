@@ -3,7 +3,7 @@ function spm_print(F)
 % FORMAT spm_print(F)
 % F	- [Optional] Figure to print ('Tag' or figure number)
 %	- defaults to the figure 'Tag'ged as 'Graphics'
-%	- If no such figure found, uses CurrentFigure, if available
+%	- If no such figure found, uses CurrentFigure, if avaliable
 %_______________________________________________________________________
 %
 % spm_print creates a footnote with details of the current

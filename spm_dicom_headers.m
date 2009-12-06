@@ -411,7 +411,7 @@ for i=1:n,
 	t(i).xx      = fread(fp,1,'int32')'; % 77 or 205
 	tot          = tot + 64+4+4+4+4+4;
 	for j=1:t(i).nitems
-		% This bit is just weird
+		% This bit is just wierd
 		t(i).item(j).xx  = fread(fp,4,'int32')'; % [x x 77 x]
 		len              = t(i).item(j).xx(1)-t(1).nitems;
 		if len<0 || len+tot+4*4>lim,

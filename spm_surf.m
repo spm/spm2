@@ -103,7 +103,7 @@ if any(mode==[2 3 4]),
 	[faces,vertices] = isosurface(br,0.5);
 
 	% Swap around x and y because isosurface does for some
-	% weird and wonderful reason.
+	% wierd and wonderful reason.
 	Mat      = V(1).mat(1:3,:)*[0 1 0 0;1 0 0 0;0 0 1 0; 0 0 0 1];
 	vertices = (Mat*[vertices' ; ones(1,size(vertices,1))])';
 	if any(mode==[2 3]),

@@ -16,7 +16,7 @@ function varargout = spm_SpUtil(varargin)
 % considerable efficiency gain for large design matrices.
 %
 % Note that when space structures are passed as arguments is is
-% assumed that their basic fields are filled in. See spm_sp for
+% assummed that their basic fields are filled in. See spm_sp for
 % details of (design) space structures and their manipulation.
 %
 % Quick Reference    :
@@ -63,7 +63,7 @@ function varargout = spm_SpUtil(varargin)
 % c   - contrast matrix (I.e. matrix of contrast weights, contrasts in columns)
 %       Must have column dimension matching that of X
 %       [defaults to eye(size(X,2)) to test uniqueness of parameter estimates]
-% i   - logical row vector indicating estimability of contrasts in c
+% i   - logical row vector indiciating estimability of contrasts in c
 %
 % A linear combination of the parameter estimates is a contrast if and
 % only if the weight vector is in the space spanned by the rows of X.

@@ -15,4 +15,4 @@ function GX = spm_global(V)
 % @(#)spm_global.m	2.2 Anon 99/04/19
 
 %-This is merely the help file for the compiled routine
-error('spm_global.c not compiled - see Makefile')
+error('spm_global.c not compiled - see spm_MAKE.sh')

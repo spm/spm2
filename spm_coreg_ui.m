@@ -321,7 +321,7 @@ defs.estimate.cost_fun = defs.estimate.cost_fun{1};
 
 tmp2 = [0 1 2 3 4 5 6 7 Inf];
 tmp = find(defs.write.interp == tmp2);
-if ~isfinite(defs.write.interp), tmp = 9; end;
+if ~finite(defs.write.interp), tmp = 9; end;
 if isempty(tmp), tmp = 2; end;
 defs.write.interp = spm_input('Reslice interpolation method?','+1','m',...
 	['Nearest Neighbour|Trilinear|2nd Degree B-Spline|'...

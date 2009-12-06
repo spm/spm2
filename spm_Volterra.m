@@ -15,7 +15,7 @@ function [X,Xname,Fc] = spm_Volterra(U,bf,V)
 % (e.g. stick functions) in U.u by the basis functions in bf to create
 % a design matrix X.  For second order expansions new entries appear
 % in ind, bf and name that correspond to the interaction among the
-% original causes. The basis functions for these effects are two dimensional
+% orginal causes. The basis functions for these efects are two dimensional
 % and are used to assemble the second order kernel in spm_graph.m.
 % Second order effects are computed for only the first column of U.u.
 %___________________________________________________________________________
