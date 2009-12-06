@@ -52,6 +52,8 @@ OSF1:
 	make all SUF=mexaxp
 MAC:
 	make all SUF=mexmac RANLIB="ranlib spm_vol_utils.mexmac.a"
+MACI:
+	make all SUF=mexmaci RANLIB="ranlib spm_vol_utils.mexmaci.a"
 
 Linux.A64:
 # The '-fPIC' option is nexessary to allow the linking proces to complete.
@@ -93,6 +95,8 @@ clean.OSF1:
 	make clean SUF=mexaxp
 clean.MAC:
 	make clean SUF=mexmac
+clean.MACI:
+	make clean SUF=mexmaci
 clean.windows:
 	make clean SUF=dll
 
@@ -412,6 +416,13 @@ verb.mexmac:
 	@ echo "_____________________________________________________________"
 	@ echo ""
 	@ echo "Unix compile for MacOS X"
+	@ echo "_____________________________________________________________"
+	@ echo ""
+
+verb.mexmaci:
+	@ echo "_____________________________________________________________"
+	@ echo ""
+	@ echo "Unix compile for MacOS X Intel"
 	@ echo "_____________________________________________________________"
 	@ echo ""
 
