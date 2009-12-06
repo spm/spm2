@@ -116,8 +116,8 @@ SPMMEX =\
 	spm_add.$(SUF) spm_conv_vol.$(SUF) spm_render_vol.$(SUF)\
 	spm_global.$(SUF) spm_resels_vol.$(SUF)\
 	spm_atranspa.$(SUF) spm_list_files.$(SUF) spm_unlink.$(SUF)\
-	spm_krutil.$(SUF) spm_project.$(SUF) spm_hist2.$(SUF) spm_max.$(SUF)\
-	spm_clusters.$(SUF) spm_bsplinc.$(SUF) spm_bsplins.$(SUF)\
+	spm_krutil.$(SUF) spm_project.$(SUF) spm_hist2.$(SUF) spm_get_lm.$(SUF)\
+	spm_bwlabel.$(SUF) spm_bsplinc.$(SUF) spm_bsplins.$(SUF)\
 	spm_bias_mex.$(SUF) spm_dilate.$(SUF) $(ADDED_MEX)
 
 ###############################################################################
@@ -283,9 +283,9 @@ spm_atranspa.$(SUF): spm_atranspa.c spm_sys_deps.h
 
 spm_unlink.$(SUF): spm_unlink.c spm_sys_deps.h
 
-spm_max.$(SUF): spm_max.c spm_sys_deps.h
+spm_get_lm.$(SUF): spm_get_lm.c spm_sys_deps.h
 
-spm_clusters.$(SUF): spm_clusters.c spm_sys_deps.h
+spm_bwlabel.$(SUF): spm_bwlabel.c spm_sys_deps.h
 
 spm_hist2.$(SUF):      spm_hist2.c spm_sys_deps.h
 
