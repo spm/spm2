@@ -180,7 +180,7 @@ fov = VF1(1).dim(1:3).*sqrt(sum(VF1(1).mat(1:3,1:3).^2));
 if any(fov<60),
 	fprintf('Field of view too small for nonlinear registration\n');
 	Tr = [];
-elseif finite(flags.cutoff) & flags.nits & ~isinf(flags.reg),
+elseif isfinite(flags.cutoff) & flags.nits & ~isinf(flags.reg),
         fprintf('3D CT Norm...\n');
 	Tr = snbasis(VG1,VF1,VWG,VWF,Affine,...
 		max(flags.smoref,flags.smosrc),flags.cutoff,flags.nits,flags.reg);

@@ -804,11 +804,11 @@ if isstruct(vol),
 	mx = -Inf;
 	for i=1:vol.dim(3),
 		tmp = spm_slice_vol(vol,spm_matrix([0 0 i]),vol.dim(1:2),0);
-		imx = max(tmp(find(finite(tmp))));
+		imx = max(tmp(find(isfinite(tmp))));
 		if ~isempty(imx),mx = max(mx,imx);end
 	end;
 else,
-	mx = max(vol(find(finite(vol))));
+	mx = max(vol(find(isfinite(vol))));
 end;
 %_______________________________________________________________________
 function mn = minval(vol)
@@ -816,11 +816,11 @@ if isstruct(vol),
         mn = Inf;
         for i=1:vol.dim(3),
                 tmp = spm_slice_vol(vol,spm_matrix([0 0 i]),vol.dim(1:2),0);
-		imn = min(tmp(find(finite(tmp))));
+		imn = min(tmp(find(isfinite(tmp))));
 		if ~isempty(imn),mn = min(mn,imn);end
         end;
 else,
-        mn = min(vol(find(finite(vol))));
+        mn = min(vol(find(isfinite(vol))));
 end;
 
 %_______________________________________________________________________
@@ -926,9 +926,9 @@ for i = valid_handles(arg1),
 
 				sc   = 64/(mx-mn);
 				off  = 65.51-mn*sc;
-				msk  = find(finite(tmpt)); imgt(msk) = off+tmpt(msk)*sc;
-				msk  = find(finite(tmpc)); imgc(msk) = off+tmpc(msk)*sc;
-				msk  = find(finite(tmps)); imgs(msk) = off+tmps(msk)*sc;
+				msk  = find(isfinite(tmpt)); imgt(msk) = off+tmpt(msk)*sc;
+				msk  = find(isfinite(tmpc)); imgc(msk) = off+tmpc(msk)*sc;
+				msk  = find(isfinite(tmps)); imgs(msk) = off+tmps(msk)*sc;
 
 				cmap = get(st.fig,'Colormap');
 				if size(cmap,1)~=128
@@ -1033,9 +1033,9 @@ for i = valid_handles(arg1),
 					tmpt = (spm_slice_vol(vol,inv(TM0*M),TD,[0 NaN])'+mn)/(mx-mn);
 					tmpc = (spm_slice_vol(vol,inv(CM0*M),CD,[0 NaN])'+mn)/(mx-mn);
 					tmps = (spm_slice_vol(vol,inv(SM0*M),SD,[0 NaN])'+mn)/(mx-mn);
-					tmpt(~finite(tmpt)) = 0;
-					tmpc(~finite(tmpc)) = 0;
-					tmps(~finite(tmps)) = 0;
+					tmpt(~isfinite(tmpt)) = 0;
+					tmpc(~isfinite(tmpc)) = 0;
+					tmps(~isfinite(tmps)) = 0;
 
 					cimgt = cimgt + cat(3,tmpt*colour(j,1),tmpt*colour(j,2),tmpt*colour(j,3));
 					cimgc = cimgc + cat(3,tmpc*colour(j,1),tmpc*colour(j,2),tmpc*colour(j,3));
@@ -1183,7 +1183,7 @@ scf = (cml-1)/(mx-mn);
 img = round((inpimg-mn)*scf)+1;
 img(find(img<1))   = 1; 
 img(find(img>cml)) = cml;
-img(~finite(img))  = miscol;
+img(~isfinite(img))  = miscol;
 return;
 %_______________________________________________________________________
 %_______________________________________________________________________

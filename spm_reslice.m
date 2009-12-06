@@ -149,7 +149,7 @@ function reslice_images(P,flags)
 %             subdirectory with the same filename but prefixed with an 'r'.
 %             They are all aligned with the first.
 
-if ~finite(flags.interp), % Use Fourier method
+if ~isfinite(flags.interp), % Use Fourier method
 	% Check for non-rigid transformations in the matrixes
 	for i=1:prod(size(P)),
 		pp = P(1).mat\P(i).mat;
@@ -215,7 +215,7 @@ for i = 1:prod(size(P)),
 			VO         = spm_create_vol(VO);
 		end;
 
-		if ~finite(flags.interp),
+		if ~isfinite(flags.interp),
 			v = abs(kspace3d(spm_bsplinc(P(i),[0 0 0 ; 0 0 0]'),P(1).mat\P(i).mat));
 			for x3 = 1:P(1).dim(3),
 				if flags.mean,
@@ -379,7 +379,7 @@ return;
 %_______________________________________________________________________
 function vo = nan2zero(vi)
 vo = vi;
-vo(~finite(vo)) = 0;
+vo(~isfinite(vo)) = 0;
 return;
 %_______________________________________________________________________
 
