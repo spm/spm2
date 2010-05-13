@@ -147,7 +147,7 @@ function renviews(V,oname)
 % distinguish brain from non-brain.
 %_______________________________________________________________________
 
-linfun = inline('fprintf([''%-30s%s''],x,[sprintf(''\b'')*ones(1,30)])','x');
+linfun = inline('fprintf([''%-30s%s''],x,repmat(sprintf(''\b''),1,30))','x');
 linfun('Rendering: ');
 
 linfun('Rendering: Transverse 1..');    rend{1} = make_struct(V,[pi 0 pi/2]);
