@@ -229,8 +229,8 @@ switch cmd
       roifname = [];
     else
       imfname = spm_get(1, '*.img', 'Select image defining ROI space');
-      [p n e v] = fileparts(imfname);
-      roifname = fullfile(p,['roitool' e v]);
+      [p n e] = fileparts(imfname);
+      roifname = fullfile(p,['roitool' e]);
       roifname = spm_input('ROI filename','!+1','s',roifname);
     end;
     spm_figure('Clear', Finter);

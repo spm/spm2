@@ -1167,7 +1167,7 @@ if isdir(pluginpath)
 		addpath(pluginpath);
 		% fprintf('spm_orthviews: Using Plugins in %s\n', pluginpath);
 		for k = 1:length(pluginfiles)
-			[p pluginname e v] = fileparts(pluginfiles(k).name);
+			[p pluginname e] = fileparts(pluginfiles(k).name);
 			st.plugins{k} = strrep(pluginname, 'spm_ov_','');
 			% fprintf('%s\n',st.plugins{k});
 		end;

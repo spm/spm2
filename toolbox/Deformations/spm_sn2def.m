@@ -149,7 +149,7 @@ return;
 %_______________________________________________________________________
 function write_jacobianm(sn,vox,bb)
 vo = init_vo(sn,vox,bb);
-[pth,nm,xt,vr]  = fileparts(deblank(sn.VF.fname));
+[pth,nm,xt]  = fileparts(deblank(sn.VF.fname));
 vo.fname   = fullfile(pth,['a_' nm '.img']);
 vo.dim(4)  = spm_type('float');
 vo.pinfo   = [1 0 0]';
@@ -180,7 +180,7 @@ return;
 %_______________________________________________________________________
 function write_det(sn,vox,bb)
 VO = init_vo(sn,vox,bb);
-[pth,nm,xt,vr]  = fileparts(deblank(sn.VF.fname));
+[pth,nm,xt]  = fileparts(deblank(sn.VF.fname));
 VO.fname   = fullfile(pth,['j_' nm '.img']);
 VO.dim(4)  = spm_type('float');
 VO.pinfo   = [1 0 0]';
@@ -202,7 +202,7 @@ return;
 function write_tensor(sn,vox,bb,m)
 vo = init_vo(sn,vox,bb);
 %ij = [1 1; 2 1; 3 1; 2 2; 3 2; 3 3];
-[pth,nm,xt,vr] = fileparts(deblank(sn.VF.fname));
+[pth,nm,xt] = fileparts(deblank(sn.VF.fname));
 vo.fname    = fullfile(pth,['e' num2str(m) '_' nm '.img']);
 vo.descrip  =  ['Strain_Tensor - m=' num2str(m)];
 vo.dim(4)   = spm_type('float');
@@ -453,7 +453,7 @@ else,
 	mat    = sn.VG.mat;
 end;
 
-[pth,nm,xt,vr]  = fileparts(deblank(sn.VF.fname));
+[pth,nm,xt]  = fileparts(deblank(sn.VF.fname));
 %VX = struct('fname',fullfile(pth,['y1_' nm '.img']),  'dim',[dim 16], ...
 %	'mat',mat,  'pinfo',[1 0 0]',  'descrip','Deformation field - X');
 %VY = struct('fname',fullfile(pth,['y2_' nm '.img']),  'dim',[dim 16], ...

@@ -85,11 +85,11 @@ spm('Pointer','Watch');
 for i=1:size(PP,1),
 	spm('FigName',['Flatten: working on scan ' num2str(i)],Finter,CmdLine);
 	drawnow;
-	P              = deblank(PP(i,:));
-	T              = spm_bias_estimate(P,flags);
-	[pth,nm,xt,vr] = fileparts(P);
-	S              = fullfile(pth,['bias_' nm '.mat']);
-	%S             = ['bias_' nm '.mat'];
+	P           = deblank(PP(i,:));
+	T           = spm_bias_estimate(P,flags);
+	[pth,nm,xt] = fileparts(P);
+	S           = fullfile(pth,['bias_' nm '.mat']);
+	%S          = ['bias_' nm '.mat'];
 	spm_bias_apply(P,S);
 end;
 if 0,

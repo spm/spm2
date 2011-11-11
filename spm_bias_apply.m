@@ -30,9 +30,9 @@ VO             = V;
 VO.dim(4)      = spm_type('float');
 
 if nargout==0,
-	[pth,nm,xt,vr] = fileparts(deblank(V.fname));
-	VO.fname       = fullfile(pth,['m' nm xt vr]);
-	%VO.fname      = ['m' nm xt vr];
+	[pth,nm,xt]    = fileparts(deblank(V.fname));
+	VO.fname       = fullfile(pth,['m' nm xt]);
+	%VO.fname      = ['m' nm xt];
 	VO.pinfo       = [1 0 0]';
 	VO             = spm_create_vol(VO);
 else,

@@ -35,7 +35,7 @@ return;
 
 %_______________________________________________________________________
 function out = prepend(in, pre)
-[pth,nme,ext,ver] = fileparts(in);
-out = fullfile(pth,[pre nme ext ver]);
+[pth,nme,ext] = fileparts(in);
+out = fullfile(pth,[pre nme ext]);
 return;
 %_______________________________________________________________________
