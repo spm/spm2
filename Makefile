@@ -54,6 +54,8 @@ MAC:
 	make all SUF=mexmac RANLIB="ranlib spm_vol_utils.mexmac.a"
 MACI:
 	make all SUF=mexmaci RANLIB="ranlib spm_vol_utils.mexmaci.a"
+MACI64:
+	make all SUF=mexmaci64 RANLIB="ranlib spm_vol_utils.mexmaci64.a"
 
 Linux.A64:
 # The '-fPIC' option is nexessary to allow the linking proces to complete.
@@ -97,6 +99,8 @@ clean.MAC:
 	make clean SUF=mexmac
 clean.MACI:
 	make clean SUF=mexmaci
+clean.MACI64:
+	make clean SUF=mexmaci64
 clean.windows:
 	make clean SUF=dll
 
@@ -422,7 +426,14 @@ verb.mexmac:
 verb.mexmaci:
 	@ echo "_____________________________________________________________"
 	@ echo ""
-	@ echo "Unix compile for MacOS X Intel"
+	@ echo "Unix compile for MacOS X, Intel 32 bit"
+	@ echo "_____________________________________________________________"
+	@ echo ""
+
+verb.mexmaci64:
+	@ echo "_____________________________________________________________"
+	@ echo ""
+	@ echo "Unix compile for MacOS X, Intel 64 bit"
 	@ echo "_____________________________________________________________"
 	@ echo ""
 
